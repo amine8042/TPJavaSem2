@@ -14,20 +14,26 @@ public class app2 {
             nc = scanner.nextInt();
         } while (nc <= 0 || nc >= 30);
         
-        int[][] M = new int[nl][nc];
-        int somme = 0;
-        long produit = 1;
-        int totalElements = nl * nc;
+        import java.util.Scanner;
+        public class app2 {
+            public static void main(String[] args) {
+                Scanner scanner = new Scanner(System.in);
         
-        System.out.println("Remplissez la matrice :");
-        for (int i = 0; i < nl; i++) {
-            for (int j = 0; j < nc; j++) {
-                System.out.print("Entrez un nombre pour la case [" + i + "][" + j + "] : ");
-                M[i][j] = scanner.nextInt();
-                somme += M[i][j];
-                produit *= M[i][j];
-            }
-        }
+        
+                int[][] M = new int[nl][nc];
+                int somme = 0;
+                long produit = 1;
+                int totalElements = nl * nc;
+                
+                System.out.println("Remplissez la matrice :");
+                for (int i = 0; i < nl; i++) {
+                    for (int j = 0; j < nc; j++) {
+                        System.out.print("Entrez un nombre pour la case [" + i + "][" + j + "] : ");
+                        M[i][j] = scanner.nextInt();
+                        somme += M[i][j];
+                        produit *= M[i][j];
+                    }
+                }
         
         double moyenne = (double) somme / totalElements;
         
