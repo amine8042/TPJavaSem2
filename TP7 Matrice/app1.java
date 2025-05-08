@@ -1,11 +1,10 @@
 import java.util.Scanner;
 
-public class tp7 {
+public class app1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int nl, nc;
-        
-        
+ 
         do {
             System.out.print("Entrez le nombre de lignes (1-49) : ");
             nl = scanner.nextInt();
@@ -18,8 +17,6 @@ public class tp7 {
         } while (nc <= 0 || nc >= 50);
         
         int[][] m = new int[nl][nc];
-        
-        
         System.out.println("Remplissez la matrice avec des nombres pairs :");
         for (int i = 0; i < nl; i++) {
             for (int j = 0; j < nc; j++) {
@@ -57,3 +54,4 @@ public class tp7 {
         scanner.close();
     }
 }
+
